@@ -1,0 +1,17 @@
+# Copyright Korey Hinton
+# License: GNU GPL v3, see COPYING file
+
+DIRPATH="${HOME}/Downloads"
+
+# filename:    matched
+# filename:    matched
+
+#->
+
+# filename
+#   matched
+#
+# filename:    matched
+#   matched
+
+grep -r --include="textclip-*.txt" ${1} ${DIRPATH} | sed G | sed -e 's/:\+/\n\ \ /'

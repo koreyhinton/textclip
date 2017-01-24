@@ -1,0 +1,12 @@
+{
+    "name": "textclip",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Download selection as plain text",
+    "permissions": [
+	"contextMenus"
+    ],
+    "background":{
+	"scripts": ["textclip.js"]
+    }
+}

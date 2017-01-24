@@ -1,0 +1,22 @@
+textclip
+
+Copyright Korey Hinton
+License: GNU GPL v3, see COPYING file
+
+TEXTCLIP CHROME EXTENSION
+
+The chrome extension can download selected text from a webpage into plain text
+(Note: paragraph/line-breaks cannot be preserved) by right-clicking the
+selction. The text will be word-bounded w/ 74 character limit to be ideal for
+grep searching later. To install it, in Chrome go to: chrome://extensions and
+enable Developer mode and select "Load unpacked extension" and choose the
+chrome-extension folder.
+
+TEXTCLIP BASH SCRIPT
+
+Also included is a script to target clipped text in a targetted way. The way I
+use it is to leave my textclip files in ~/Downloads where they were downloaded
+and then after making the textclip script executable and adding to path I run
+the textclip command with exact search expression to find what I'm looking for:
+
+    textclip "pyenv"
