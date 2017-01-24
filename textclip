@@ -11,7 +11,7 @@ DIRPATH="${HOME}/Downloads"
 # filename
 #   matched
 #
-# filename:    matched
+# filename:
 #   matched
 
 grep -r --include="textclip-*.txt" ${1} ${DIRPATH} | sed G | sed -e 's/:\+/\n\ \ /'
